@@ -12,4 +12,4 @@ function getUserWithFullName(user){
 
 const userWithFullName = getUserWithFullName(user);
 
-console.log(userWithFullName);
+console.log(userWithFullName, user);
