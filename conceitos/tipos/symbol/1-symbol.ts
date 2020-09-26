@@ -42,4 +42,5 @@ const directions = {
     DOWN  : Symbol('DOWN'),
     LEFT  : Symbol('LEFT'),
     RIGHT : Symbol('RIGHT')
-}
+};
+
