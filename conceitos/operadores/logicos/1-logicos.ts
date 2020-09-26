@@ -35,3 +35,5 @@ var n3 = !"Gato";   // !t retorna false
 // False
 " "
 0
+
+!! // conversão pra boolean
