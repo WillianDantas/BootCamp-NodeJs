@@ -10,6 +10,10 @@ console.log('\nArray com as posições separadas pelo delimitador:', splittedTex
 const replacedText = 'Texto'.replace('Text', 'txet');
 console.log('\nSustituição de valor:', replacedText);
 
+//
+const Texto = 'Texto e Texto'.replace('Texto', 'Letra');
+console.log("\n substituir",Texto);
+
 // Retorna  "fatia" de um valor 
 const  lastChar = 'Texto'.slice(-1);
 console.log('\núltimo letra de uma string:', lastChar);
