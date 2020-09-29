@@ -1,25 +1,38 @@
-const divs = document.querySelectorAll('div'); // ArrayNodelist
-const arr = Array.from(divs); // Transforma em array
+//const divs = document.querySelectorAll('div'); // ArrayNodelist
+//const arr = Array.from(divs); // Transforma em array
 
-arr.pop();
+let frutas = Array.of('Laranja', 'Maça', 'Banana'); // Criar um array
 
-arr.shift();
-
-arr.push();
-
-arr.pop() // remove ultimo elemento do array;
+console.log(frutas);
 
 
-arr.unshift(); // adiconar no inicio do array
+console.log(frutas.push("melancia"));
 
-arr.shift() // remove no inicio
+console.log(frutas);
 
-arr.concat() // merge entre duas lista
+console.log(frutas.pop());  // remove ultimo elemento do array;
 
-arr.slice();
 
-arr.splice();
+console.log(frutas.unshift("Abacaxi")); // adiconar no inicio do array
 
-frutas = ["melacia", "banana"];
+console.log(frutas.shift()); // remove no inicio
 
-frutas.splice(1, 0, "acerola");
+console.log(frutas);
+
+let mergeFrutas = ["Melão", "Abacate"];
+console.log(frutas.concat(mergeFrutas)) // merge entre duas lista
+
+console.log(frutas.slice(0));
+console.log(frutas);
+
+console.log(frutas.slice(2));
+console.log(frutas);
+
+console.log(frutas.slice(-1));
+console.log(frutas);
+
+console.log(frutas.splice(2));
+console.log(frutas);
+
+console.log(frutas.splice(1, 0, "acerola"));
+console.log(frutas);
