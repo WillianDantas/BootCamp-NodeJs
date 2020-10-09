@@ -74,3 +74,45 @@ for (let value of obj){
 console.log('\n----------------------');
 const arr2 = [...obj];
 console.log(arr2);
+
+// Generetors
+console.log('\n ------ Generators ------');
+
+function* hello(){
+    console.log('\nHello');
+    yield 1;
+    console.log('\nFrom');
+    const value  = yield 2;
+
+    console.log(`\n${value}`)
+    console.log('\nFunction');
+    yield 3;
+}
+
+const iter  = hello();
+
+
+console.log(iter.next());
+console.log(iter.next());
+console.log(iter.next('Outside!'));
+
+
+function* natuuralNumbers(){
+    let number = 0;
+    while(true){
+        yield number;
+        number++;
+    }
+}
+
+console.log("\n---------------")
+
+const ite = natuuralNumbers();
+
+console.log(ite.next());
+console.log(ite.next());
+console.log(ite.next());
+
+
+
+
