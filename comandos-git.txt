@@ -65,3 +65,5 @@ https://pandao.github.io/editor.md/en.html => editor README.
 https://imgur.com/ => fazer upload de imagens.
 
 https://simpleicons.org/?q=google
+
+https://www.youtube.com/watch?v=T70t3mDiwvg
