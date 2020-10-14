@@ -113,6 +113,17 @@ console.log(ite.next());
 console.log(ite.next());
 console.log(ite.next());
 
+// Generators
+const objeto = {
+    values: [1, 2, 3, 4,],
+    *[Symbol.iterator](){
+        for(var i = 0; i < this.values.length; i++){
+            yield this.values[i];
+        }
+    }
+}
 
-
-
+console.log("\nfunção com generators");
+for(let value of obj){
+    console.log(value);
+}
