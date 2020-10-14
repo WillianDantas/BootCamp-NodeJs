@@ -30,3 +30,4 @@ console.log(s2(4));
 console.log(s2(5));
 
 console.log("Digitar em varias linha crtl + shift + alt + seta");
+console.log("Digitar em varias linha  shift + alt + seta");
