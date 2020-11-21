@@ -17,6 +17,7 @@ git merge <branch> => juntar branch
 git ststus
 git log
 git branch
+git branch -a
 
 
 git remote add origin  http://
@@ -26,6 +27,9 @@ git push origin <Branch> => Criar branch no github / comando envia uma branch do
 git remote add origin  https://github.com/WillianDantas/Tecnicas-Avancadas_Angular.git
 
 git pull origin master --allow-unrelated-histories
+
+git remote set-head origin master => setar remotes/origin/HEAD -> origin/master
+git remote rm <remote-name> => remover  remote 
 
 git
 git checkout master
@@ -56,6 +60,15 @@ git checkout -- NOME_DO_ARQUIVO = > comando se deve utilizar quando você quer '
 git reset HEAD NOME_DO_ARQUIVO => comando você utiliza para retirar um arquivo adicionado para commitar (após utilizar git add).
 
 git commit --amend => comando utilizado para editar a mensagem do último commit.
+
+git branch -a
+# *master
+#  test
+#  remote/origin/master
+#  remote/origin/test
+
+git branch -d test
+# Deleted branch test (was ########).
 
 README => Feito Markdonw.
  
