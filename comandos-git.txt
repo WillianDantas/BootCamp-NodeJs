@@ -25,6 +25,8 @@ git remote rm origin
 git push -u origin master
 git push origin <Branch> => Criar branch no github / comando envia uma branch do repositório local ao repositório remoto
 git remote add origin  https://github.com/WillianDantas/Tecnicas-Avancadas_Angular.git
+git init
+git remote add origin https://github.com/gbgelado/meu-primeiro-repositorio.git
 
 git pull origin master --allow-unrelated-histories
 
