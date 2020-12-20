@@ -53,3 +53,15 @@ onde você escreve o teste antes do código, faz o mesmo passar e refator o cód
 
 - npm init -y
 - npm i --save-dev mocha
+- npm run test
+
+# Comando Chai
+- npm init -y
+- npm i --save-dev chai
+- npm run test
+
+# Comando Sinon
+
+- npm init -y
+- npm i --save-dev sinon
+- npm run test

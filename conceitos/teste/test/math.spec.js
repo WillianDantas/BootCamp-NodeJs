@@ -22,6 +22,7 @@ describe('Math class', function(){
     it('Sum two numbers Async', function(done) {
         const math = new Math();
         this.timeout(3000); // timeout não pode ser iniciado com arrow function
+    
         try{
             math.sumAsync(value, 5, value => {
                 assert.equal(value, 10);

@@ -27,8 +27,10 @@ git push origin <Branch> => Criar branch no github / comando envia uma branch do
 git remote add origin  https://github.com/WillianDantas/Tecnicas-Avancadas_Angular.git
 git init
 git remote add origin https://github.com/gbgelado/meu-primeiro-repositorio.git
+git push --set-upstream origin master
 
 git pull origin master --allow-unrelated-histories
+
 
 git remote set-head origin master => setar remotes/origin/HEAD -> origin/master
 git remote rm <remote-name> => remover  remote 
