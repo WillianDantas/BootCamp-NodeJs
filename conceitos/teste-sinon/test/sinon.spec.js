@@ -77,7 +77,7 @@ describe('sinon class', function(){
         expect(obj).to.deep.equal(obj2);
     });
 
-    it.only('Calls res with sum and index values', function() {
+    it('Calls res with sum and index values', function() {
         const req = {}
         const res = {
             load: sinon.spy()
@@ -88,7 +88,33 @@ describe('sinon class', function(){
 
         // expect(res.load.calledOnce).to.be.true;
 
-        expect(res.load.args[0][0]).to.equal('index');
+        // expect(res.load.args[0][0]).to.equal('index');
+
+        expect(res.load.args[0][1]).to.equal(10);
+
     });
+
+    it.only('Calls res with sum and index values', function() {
+        const req = {}
+        const res = {
+            load: function load(){
+                console.log('Called');
+            }
+        };
+
+        // sinon.spy(res, 'load');
+
+        sinon.stub(res, 'load').returns('xpto');
+
+        const math = new Math();
+
+        math.printSum(req, res, 5, 5);
+
+        res.restore();
+
+        expect(res.load.args[0][0]).to.equal('index');
+
+    });
+
 
 });
