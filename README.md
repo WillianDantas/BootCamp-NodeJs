@@ -65,3 +65,6 @@ onde você escreve o teste antes do código, faz o mesmo passar e refator o cód
 - npm init -y
 - npm i --save-dev sinon
 - npm run test
+
+# Link de Url
+https://medium.com/trainingcenter/entendendo-promises-de-uma-vez-por-todas-32442ec725c2
